@@ -6,6 +6,8 @@
 annotations_c includes species classification annotations, used for both segmentation and classification tasks.
 annotations_v includes vitality classification annotations, used for both segmentation and classification tasks.
 annotations_cv contains both species and vitality annotations, enabling joint segmentation and classification.
+All segmentation data is available in the database. Classification data was provided in previous reviewer versions, but it remains unpublished and cannot be freely used or shared at this time. 
+The classification annotations will be available soon along with the Bamberg Forest dataset v2.
 
 Train-set, test-set and val-set images could be downloaded from Bamberg_coco2048.zip (30 GB) in BAMFORESTS (https://www.dlr.de/en/eoc/about-us/remote-sensing-technology-institute/photogrammetry-and-image-analysis/public-datasets/bamforests). Please download and put Train-set, test-set and val-set images in the train2017, test2017, val2017 folder.
 
@@ -18,3 +20,5 @@ python .\tools\test.py .\work_dirs\mask-rcnn_convnext-v2-b_fpn_lsj-3x-fcmae_coco
 
 (6) Use the trained model and checkpoint file: 
 python ./predict.py
+
+(7) Don't forget to use post-processing code.
